@@ -1,0 +1,62 @@
+.input-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    caret-shape: bar;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 7.5px;
+    padding-left: 15px;
+    font-size: 14px;
+    border: 1.5px solid #3b71ca;
+    border-radius: 3px;
+    outline: none;
+    background: white;
+}
+
+.input-container label {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: white;
+    padding: 0 5px;
+    font-size: 12.5px;
+    font-weight: bold;
+    color: #3b71ca;
+    transition: all 0.3s ease-in-out;
+    pointer-events: none;
+}
+.input-container input:focus + label,
+.input-container input:not(:placeholder-shown) + label {
+    top: 0px;
+    font-size: 12.5px;
+    color: #3b71ca;
+}
+.input-container input:focus{
+    box-shadow: inset 0px 0px 4px -1px #3b71ca !important;
+}
+.input-container textarea:focus + label,
+.input-container textarea:not(:placeholder-shown) + label {
+    top: 0px;
+    font-size: 12.5px;
+    color: #3b71ca;
+}
+
+.input-container textarea:focus {
+    box-shadow: inset 0px 0px 4px -1px #3b71ca !important;
+}
+.input-container textarea {
+    width: 100%;
+    padding: 7.5px;
+    padding-left: 15px;
+    font-size: 14px;
+    border: 1.5px solid #3b71ca;
+    border-radius: 3px;
+    outline: none;
+    background: white;
+    resize: none; /* Allows resizing only vertically */
+    min-height: 40px; /* Ensures it's not too small */
+}

@@ -13,6 +13,7 @@ export const EmployeeDashboard=()=>{
                 <AccountBasicInfo/>
                 <OtherInfo/>
             </div>
+
         </>
     )
 }
